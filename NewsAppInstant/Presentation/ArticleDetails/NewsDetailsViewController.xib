@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailsViewController" customModule="NewsAppInstant" customModuleProvider="target">
+            <connections>
+                <outlet property="articleImage" destination="7er-Gd-2YK" id="rs7-GX-GqL"/>
+                <outlet property="articleTitleLabel" destination="w0k-TY-yjG" id="829-fb-DXW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozt-f4-UVH">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkm-tU-bim">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="802"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7er-Gd-2YK">
+                                    <rect key="frame" x="95" y="40" width="203" height="318"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="203" id="75i-aG-2h7"/>
+                                        <constraint firstAttribute="height" constant="318" id="h0B-mX-4XE"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0k-TY-yjG">
+                                    <rect key="frame" x="20" y="391" width="353" height="20.333333333333314"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="7er-Gd-2YK" firstAttribute="top" secondItem="Wkm-tU-bim" secondAttribute="top" constant="40" id="2mA-ib-Ijs"/>
+                                <constraint firstAttribute="trailing" secondItem="w0k-TY-yjG" secondAttribute="trailing" constant="20" id="hD6-Cj-1I6"/>
+                                <constraint firstItem="w0k-TY-yjG" firstAttribute="top" secondItem="7er-Gd-2YK" secondAttribute="bottom" constant="33" id="hoP-8g-T1O"/>
+                                <constraint firstItem="7er-Gd-2YK" firstAttribute="centerX" secondItem="w0k-TY-yjG" secondAttribute="centerX" id="k6J-wu-dzb"/>
+                                <constraint firstItem="w0k-TY-yjG" firstAttribute="leading" secondItem="Wkm-tU-bim" secondAttribute="leading" constant="20" id="uoh-QG-ktI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Wkm-tU-bim" secondAttribute="bottom" id="3yi-MR-5FK"/>
+                        <constraint firstItem="Wkm-tU-bim" firstAttribute="leading" secondItem="ozt-f4-UVH" secondAttribute="leading" id="EKY-lf-DYu"/>
+                        <constraint firstItem="Wkm-tU-bim" firstAttribute="top" secondItem="ozt-f4-UVH" secondAttribute="top" id="Y29-Hy-kpb"/>
+                        <constraint firstAttribute="trailing" secondItem="Wkm-tU-bim" secondAttribute="trailing" id="to1-Dk-PzY"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Wkm-tU-bim" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.941315" id="12H-hI-rdg"/>
+                <constraint firstAttribute="bottom" secondItem="ozt-f4-UVH" secondAttribute="bottom" id="C1N-M0-Bge"/>
+                <constraint firstItem="ozt-f4-UVH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F8E-kD-fJQ"/>
+                <constraint firstItem="Wkm-tU-bim" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="bcZ-yc-eJM"/>
+                <constraint firstItem="ozt-f4-UVH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cuP-mO-2Vy"/>
+                <constraint firstItem="ozt-f4-UVH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sJw-Rc-sPk"/>
+            </constraints>
+            <point key="canvasLocation" x="479" y="-5"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

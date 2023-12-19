@@ -55,17 +55,17 @@ class AppDependencies {
     func makeNewsViewController() -> UIViewController {
         
         let viewModel = NewsControllerViewModel(manager: manager)
-        let viewController = NewsViewController(viewModel: viewModel)
+        let router = NewsViewRouter()
+        let viewController = NewsViewController(viewModel: viewModel, router: router)
         viewController.title = "Articles"
         let navigationController = UINavigationController(rootViewController: viewController)
+        router.navigationController = navigationController
         return navigationController
     }
     
     // create DetailViewController
-//    func makeMovieDetailsViewController(for movieId: Int) -> UIViewController {
-//        let viewModel = MovieDetailsViewControllerViewModel(id: movieId, manager: theMDBManager)
-//        let viewController = MovieDetailsViewController(viewModel: viewModel)
-//        viewModel.delegate = viewController
-//        return viewController
-//    }
+    func makeNewsDetailsViewController(for article: Article) -> UIViewController {
+        let viewController = NewsDetailsViewController(article: article)
+        return viewController
+    }
 }

@@ -11,12 +11,15 @@ class NewsViewController: UIViewController {
     
     let viewModel: NewsControllerViewModel
     
+    let router: NewsViewRouter
+    
     private var articles: [Article] = []
     
     @IBOutlet weak var tableView: UITableView!
     
-    init(viewModel: NewsControllerViewModel) {
+    init(viewModel: NewsControllerViewModel, router: NewsViewRouter) {
         self.viewModel = viewModel
+        self.router = router
         super.init(nibName: "NewsViewController", bundle: nil)
     }
     
@@ -59,7 +62,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate  {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let article = viewModel.itemAt(indexPath: indexPath)
-        print(article)
+        router.routeToArticleDetails(for: article)
         
     }
     
