@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="articleImage" destination="7er-Gd-2YK" id="rs7-GX-GqL"/>
                 <outlet property="articleTitleLabel" destination="w0k-TY-yjG" id="829-fb-DXW"/>
+                <outlet property="linkLabel" destination="xRO-oz-hae" id="aFT-Gm-iTN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,14 +40,23 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRO-oz-hae">
+                                    <rect key="frame" x="20" y="451" width="353" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" systemColor="linkColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="7er-Gd-2YK" firstAttribute="top" secondItem="Wkm-tU-bim" secondAttribute="top" constant="40" id="2mA-ib-Ijs"/>
+                                <constraint firstAttribute="trailing" secondItem="xRO-oz-hae" secondAttribute="trailing" constant="20" id="6f6-cL-7MA"/>
                                 <constraint firstAttribute="trailing" secondItem="w0k-TY-yjG" secondAttribute="trailing" constant="20" id="hD6-Cj-1I6"/>
                                 <constraint firstItem="w0k-TY-yjG" firstAttribute="top" secondItem="7er-Gd-2YK" secondAttribute="bottom" constant="33" id="hoP-8g-T1O"/>
+                                <constraint firstItem="xRO-oz-hae" firstAttribute="top" secondItem="w0k-TY-yjG" secondAttribute="bottom" constant="7.6699999999999999" id="iw9-Nm-bFL"/>
                                 <constraint firstItem="7er-Gd-2YK" firstAttribute="centerX" secondItem="w0k-TY-yjG" secondAttribute="centerX" id="k6J-wu-dzb"/>
                                 <constraint firstItem="w0k-TY-yjG" firstAttribute="leading" secondItem="Wkm-tU-bim" secondAttribute="leading" constant="20" id="uoh-QG-ktI"/>
+                                <constraint firstItem="xRO-oz-hae" firstAttribute="leading" secondItem="Wkm-tU-bim" secondAttribute="leading" constant="20" symbolic="YES" id="vHy-qB-0VJ"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -72,6 +82,9 @@
         </view>
     </objects>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
