@@ -8,7 +8,7 @@
 import Foundation
 
 public class GenericDecoder {
-    public static func decodeResult<T: DTO> (result: HTTPClientResult) -> Swift.Result<T, NetworkingServiceError> {
+    public static func decodeResult<T: Codable> (result: HTTPClientResult) -> Swift.Result<T, NetworkingServiceError> {
         
         if let response = result.response, let urlResponse = response.response {
             print(urlResponse)
@@ -39,7 +39,7 @@ public class GenericDecoder {
                 let jsonStr = String(decoding: data, as: UTF8.self)
                 print(jsonStr)
                 let userData = try decoder.decode(T.self, from: data)
-                print(userData.description)
+                
                 return .success(userData)
             } catch {
                 print(error)

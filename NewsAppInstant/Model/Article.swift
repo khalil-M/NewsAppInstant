@@ -16,13 +16,13 @@ public struct Article: Codable {
     }
 
     let source: Source
-    let author: String
+    let author: String?
     let title: String
-    let description: String
-    let url: URL
+    let description: String?
+    let url: URL?
     let urlToImage: URL?
-    let publishedAt: Date
-    let content: String
+    let publishedAt: String?
+    let content: String?
 }
 
 public struct NewsResponse: Codable {

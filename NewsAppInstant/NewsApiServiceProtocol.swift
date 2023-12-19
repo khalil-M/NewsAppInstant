@@ -30,32 +30,9 @@ public class NewsApiService: NewsApiServiceProtocol {
  
     // get list of news
     public func getArticlesList(completion: @escaping (Swift.Result<NewsResponse, ServiceError>) -> Void) {
-        let baseURL = URL(string: "https://newsapi.org/v2/everything")!
-        let apiKey = "your_api_key_here" // Replace with your actual API key
-        let queryParameters: [String: String] = [
-            "q": "bitcoin",
-            "apiKey": apiKey,
-            "language": "en-US",
-            "page": "1"
-        ]
-
-        let url = baseURL.appendingQueryParameters(queryParameters)
-
-        client.makeRequest(toURL: url, withHttpMethod: .get) { [weak self] result in
-            guard let self = self else { return }
-
-            completion(GenericDecoder.decodeResult(result: result))
-        }
-    }
-
-    
-    // get movie by id
-    public func getMovie(for id: Int, completion: @escaping (Result<Movie, ServiceError>) -> Void) {
         let url = baseURL
-            .appendingPathComponent(String(id))
-            .appendingQueryItem(name: "api_key", value: apiKey)
-            .appendingQueryItem(name: "language", value: "en-US")
-            .appendingQueryItem(name: "page", value: "1")
+            .appendingQueryItem(name: "q", value: "bitcoin")
+            .appendingQueryItem(name: "apiKey", value: apiKey)
         
         client.makeRequest(toURL: url, withHttpMethod: .get) { [weak self] result in
             guard self != nil else { return }

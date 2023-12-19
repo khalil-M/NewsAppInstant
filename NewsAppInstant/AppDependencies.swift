@@ -27,9 +27,9 @@ class AppDependencies {
         return NewsApiService(baseURL: URL(string: "https://newsapi.org/v2/everything/")!, client: client, apiKey: apiKey)
     }()
     
-//    private lazy var theMDBManager: TheMDBManagerProtocol = {
-//        return TheMDBManager(service: service)
-//    }()
+    private lazy var manager: NewsApiManagerProtocol = {
+        return NewsApiManager(service: service)
+    }()
     
 
     
@@ -53,8 +53,9 @@ class AppDependencies {
     
     
     func makeNewsViewController() -> UIViewController {
-        let viewController = NewsViewController()
-        viewController.view.backgroundColor = .red
+        
+        let viewModel = NewsControllerViewModel(manager: manager)
+        let viewController = NewsViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.title = "Home"
         navigationController.tabBarItem.image = UIImage(systemName: "house")

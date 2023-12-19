@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE547A952B31D0100061534C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547A942B31D0100061534C /* AppDelegate.swift */; };
 		CE547A972B31D0100061534C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547A962B31D0100061534C /* SceneDelegate.swift */; };
-		CE547A992B31D0100061534C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547A982B31D0100061534C /* ViewController.swift */; };
 		CE547A9C2B31D0100061534C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE547A9A2B31D0100061534C /* Main.storyboard */; };
 		CE547A9E2B31D0120061534C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE547A9D2B31D0120061534C /* Assets.xcassets */; };
 		CE547AA12B31D0120061534C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE547A9F2B31D0120061534C /* LaunchScreen.storyboard */; };
@@ -26,6 +25,7 @@
 		CE547ADA2B31DBE30061534C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AD92B31DBE30061534C /* Article.swift */; };
 		CE547ADD2B31E0B70061534C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ADC2B31E0B70061534C /* Extensions.swift */; };
 		CE547ADF2B31E2870061534C /* NewsApiManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ADE2B31E2870061534C /* NewsApiManagerProtocol.swift */; };
+		CE547AE12B31E5090061534C /* NewsControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AE02B31E5090061534C /* NewsControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		CE547A912B31D0100061534C /* NewsAppInstant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppInstant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE547A942B31D0100061534C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE547A962B31D0100061534C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE547A982B31D0100061534C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE547A9B2B31D0100061534C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE547A9D2B31D0120061534C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE547AA02B31D0120061534C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		CE547AD92B31DBE30061534C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		CE547ADC2B31E0B70061534C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE547ADE2B31E2870061534C /* NewsApiManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiManagerProtocol.swift; sourceTree = "<group>"; };
+		CE547AE02B31E5090061534C /* NewsControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +124,11 @@
 				CE547A962B31D0100061534C /* SceneDelegate.swift */,
 				CE547AC42B31D5E00061534C /* AppDependencies.swift */,
 				CE547AD22B31D68E0061534C /* Networking */,
-				CE547A982B31D0100061534C /* ViewController.swift */,
 				CE547AD72B31DAF40061534C /* NewsApiServiceProtocol.swift */,
 				CE547ADE2B31E2870061534C /* NewsApiManagerProtocol.swift */,
 				CE547ADB2B31DBE90061534C /* Model */,
 				CE547AD32B31D7CB0061534C /* NewsViewController.swift */,
+				CE547AE02B31E5090061534C /* NewsControllerViewModel.swift */,
 				CE547AD42B31D7CB0061534C /* NewsViewController.xib */,
 				CE547A9A2B31D0100061534C /* Main.storyboard */,
 				CE547A9D2B31D0120061534C /* Assets.xcassets */,
@@ -310,8 +310,8 @@
 				CE547ACD2B31D6850061534C /* HTTPClient.swift in Sources */,
 				CE547AD02B31D6850061534C /* NetworkingServiceError.swift in Sources */,
 				CE547AD52B31D7CB0061534C /* NewsViewController.swift in Sources */,
-				CE547A992B31D0100061534C /* ViewController.swift in Sources */,
 				CE547ADF2B31E2870061534C /* NewsApiManagerProtocol.swift in Sources */,
+				CE547AE12B31E5090061534C /* NewsControllerViewModel.swift in Sources */,
 				CE547A952B31D0100061534C /* AppDelegate.swift in Sources */,
 				CE547ADD2B31E0B70061534C /* Extensions.swift in Sources */,
 				CE547ACE2B31D6850061534C /* GenericDecoder.swift in Sources */,
