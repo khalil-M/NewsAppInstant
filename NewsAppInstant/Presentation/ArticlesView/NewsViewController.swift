@@ -9,13 +9,15 @@ import UIKit
 
 class NewsViewController: UIViewController {
     
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     let viewModel: NewsControllerViewModel
     
     let router: NewsViewRouter
     
     private var articles: [Article] = []
-    
-    @IBOutlet weak var tableView: UITableView!
     
     init(viewModel: NewsControllerViewModel, router: NewsViewRouter) {
         self.viewModel = viewModel

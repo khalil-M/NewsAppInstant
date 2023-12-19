@@ -33,6 +33,7 @@
 		CE547AF42B32002C0061534C /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AF32B32002C0061534C /* Routing.swift */; };
 		CE547AFB2B32047E0061534C /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AF92B32047E0061534C /* NewsDetailsViewController.swift */; };
 		CE547AFC2B32047E0061534C /* NewsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AFA2B32047E0061534C /* NewsDetailsViewController.xib */; };
+		CE608B962B324D0700DB94D5 /* NewsDetailsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE608B952B324D0700DB94D5 /* NewsDetailsViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		CE547AF32B32002C0061534C /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		CE547AF92B32047E0061534C /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		CE547AFA2B32047E0061534C /* NewsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsViewController.xib; sourceTree = "<group>"; };
+		CE608B952B324D0700DB94D5 /* NewsDetailsViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 			children = (
 				CE547AF92B32047E0061534C /* NewsDetailsViewController.swift */,
 				CE547AFA2B32047E0061534C /* NewsDetailsViewController.xib */,
+				CE608B952B324D0700DB94D5 /* NewsDetailsViewControllerViewModel.swift */,
 			);
 			path = ArticleDetails;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				CE547ACD2B31D6850061534C /* HTTPClient.swift in Sources */,
 				CE547AD02B31D6850061534C /* NetworkingServiceError.swift in Sources */,
 				CE547AD52B31D7CB0061534C /* NewsViewController.swift in Sources */,
+				CE608B962B324D0700DB94D5 /* NewsDetailsViewControllerViewModel.swift in Sources */,
 				CE547AFB2B32047E0061534C /* NewsDetailsViewController.swift in Sources */,
 				CE547ADF2B31E2870061534C /* NewsApiManagerProtocol.swift in Sources */,
 				CE547AE12B31E5090061534C /* NewsControllerViewModel.swift in Sources */,

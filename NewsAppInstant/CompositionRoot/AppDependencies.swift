@@ -65,7 +65,8 @@ class AppDependencies {
     
     // create DetailViewController
     func makeNewsDetailsViewController(for article: Article) -> UIViewController {
-        let viewController = NewsDetailsViewController(article: article)
+        let viewModel = NewsDetailsViewControllerViewModel(article: article)
+        let viewController = NewsDetailsViewController(viewModel: viewModel)
         return viewController
     }
 }
