@@ -22,10 +22,10 @@ class AppDependencies {
         return URLSessionHTTPClient(session: URLSession.shared)
     }()
     
-//    private lazy var service: TheMDBApiServiceProtocol = {
-//        let apiKey = "8290a6cd7f5454ee042badd9ac77160f"
-//        return TheMDBApiService(baseURL: URL(string: "https://api.themoviedb.org/3/movie/")!, client: client, apiKey: apiKey)
-//    }()
+    private lazy var service: NewsApiServiceProtocol = {
+        let apiKey = "d050a588ac164d6f92580aa1c0b5540a"
+        return NewsApiService(baseURL: URL(string: "https://newsapi.org/v2/everything/")!, client: client, apiKey: apiKey)
+    }()
     
 //    private lazy var theMDBManager: TheMDBManagerProtocol = {
 //        return TheMDBManager(service: service)
