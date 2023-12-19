@@ -56,9 +56,8 @@ class AppDependencies {
         
         let viewModel = NewsControllerViewModel(manager: manager)
         let viewController = NewsViewController(viewModel: viewModel)
+        viewController.title = "Articles"
         let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.title = "Home"
-        navigationController.tabBarItem.image = UIImage(systemName: "house")
         return navigationController
     }
     

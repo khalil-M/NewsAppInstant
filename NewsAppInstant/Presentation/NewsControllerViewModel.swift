@@ -31,6 +31,7 @@ class NewsControllerViewModel {
                     self?.articles = response.articles
                     print("Articles inside getData: \(self?.articles ?? [])")
                     completion(response.articles)
+                    self?.reloadTableView()
                 case .failure(let error):
                     print("Failed to fetch articles: \(error)")
                     completion([]) // You might want to pass an empty array in case of failure

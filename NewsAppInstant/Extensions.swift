@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension URL {
     func appendingQueryItem(name: String, value: String) -> URL {
@@ -16,3 +17,35 @@ extension URL {
         return components.url!
     }
 }
+
+extension UIImageView {
+    func downloadImage(fromURL url:URL) -> URLSessionDataTask {
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            
+            guard let strongSelf = self else { return }
+            
+            guard let httpURLResponse = response as? HTTPURLResponse,
+                  httpURLResponse.statusCode == 200,
+                  let mimeType = response?.mimeType,
+                  mimeType.hasPrefix("image"),
+                  let data = data, error == nil,
+                  let image = UIImage(data: data) else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                strongSelf.image = image
+                
+                do {
+                   try OnDiskImageCaching.publicCache.cacheImage(image, url: url)
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+            }
+        }
+        task.resume()
+        return task
+    }
+}
+
