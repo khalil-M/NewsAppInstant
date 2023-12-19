@@ -8,6 +8,11 @@
 import Foundation
 
 public class GenericDecoder {
+    
+    // Decodes the result of an HTTP client operation into a Swift result.
+    /// - Parameters:
+    ///   - result: The result of an HTTP client operation.
+    /// - Returns: A Swift result containing either the decoded data of type T or a NetworkingServiceError.
     public static func decodeResult<T: Codable> (result: HTTPClientResult) -> Swift.Result<T, NetworkingServiceError> {
         
         if let response = result.response, let urlResponse = response.response {

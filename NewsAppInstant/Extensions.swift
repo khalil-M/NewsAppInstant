@@ -19,6 +19,10 @@ extension URL {
 }
 
 extension UIImageView {
+    
+    /// Downloads an image from the specified URL and caches it.
+    /// - Parameter url: The URL of the image to be downloaded.
+    /// - Returns: URLSessionDataTask representing the image download task.
     func downloadImage(fromURL url:URL) -> URLSessionDataTask {
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             

@@ -12,17 +12,19 @@ class NewsControllerViewModel {
     
     ///vars
     private var manager: NewsApiManagerProtocol
-    
     var reloadTableView: () -> Void = { }
-    
     public var articles: [Article] = []
     
+  
+    /// Initializes an instance with a manager conforming to the NewsApiManagerProtocol.
+    /// - Parameter manager: The manager responsible for handling API .
     init(manager: NewsApiManagerProtocol) {
         self.manager = manager
     }
     
     
-    // getData
+    /// Fetches data, typically a list of Article objects, and calls the completion handler when done.
+    /// - Parameter completion: A closure to be called with the fetched Articles or an empty array in case of failure.
     public func getData(completion: @escaping ([Article]) -> Void) {
         manager.getArticlesList { [weak self] result in
             DispatchQueue.main.async {
@@ -41,9 +43,11 @@ class NewsControllerViewModel {
     }
 
     
-    // get movie at specific index
+    
+    /// Retrieves the Article object at the specified IndexPath.
+    /// - Parameter indexPath: The IndexPath indicating the position of the Article in the list.
+    /// - Returns: Article object at the specified IndexPath.
     func itemAt(indexPath: IndexPath) -> Article {
-//        getData()
         return articles[indexPath.row]
     }
     
