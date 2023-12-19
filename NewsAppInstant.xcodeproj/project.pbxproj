@@ -21,6 +21,8 @@
 		CE547ACF2B31D6850061534C /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ACC2B31D6850061534C /* DTO.swift */; };
 		CE547AD02B31D6850061534C /* NetworkingServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AC92B31D6850061534C /* NetworkingServiceError.swift */; };
 		CE547AD12B31D6850061534C /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ACB2B31D6850061534C /* URLSessionHTTPClient.swift */; };
+		CE547AD52B31D7CB0061534C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AD32B31D7CB0061534C /* NewsViewController.swift */; };
+		CE547AD62B31D7CB0061534C /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD42B31D7CB0061534C /* NewsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		CE547ACA2B31D6850061534C /* GenericDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecoder.swift; sourceTree = "<group>"; };
 		CE547ACB2B31D6850061534C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		CE547ACC2B31D6850061534C /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		CE547AD32B31D7CB0061534C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		CE547AD42B31D7CB0061534C /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				CE547AC42B31D5E00061534C /* AppDependencies.swift */,
 				CE547AD22B31D68E0061534C /* Networking */,
 				CE547A982B31D0100061534C /* ViewController.swift */,
+				CE547AD32B31D7CB0061534C /* NewsViewController.swift */,
+				CE547AD42B31D7CB0061534C /* NewsViewController.xib */,
 				CE547A9A2B31D0100061534C /* Main.storyboard */,
 				CE547A9D2B31D0120061534C /* Assets.xcassets */,
 				CE547A9F2B31D0120061534C /* LaunchScreen.storyboard */,
@@ -257,6 +263,7 @@
 				CE547AA12B31D0120061534C /* LaunchScreen.storyboard in Resources */,
 				CE547A9E2B31D0120061534C /* Assets.xcassets in Resources */,
 				CE547A9C2B31D0100061534C /* Main.storyboard in Resources */,
+				CE547AD62B31D7CB0061534C /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +291,7 @@
 				CE547AC52B31D5E00061534C /* AppDependencies.swift in Sources */,
 				CE547ACD2B31D6850061534C /* HTTPClient.swift in Sources */,
 				CE547AD02B31D6850061534C /* NetworkingServiceError.swift in Sources */,
+				CE547AD52B31D7CB0061534C /* NewsViewController.swift in Sources */,
 				CE547A992B31D0100061534C /* ViewController.swift in Sources */,
 				CE547A952B31D0100061534C /* AppDelegate.swift in Sources */,
 				CE547ACE2B31D6850061534C /* GenericDecoder.swift in Sources */,
