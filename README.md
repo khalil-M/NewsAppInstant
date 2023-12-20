@@ -45,6 +45,8 @@ To run this project on your local machine, follow these steps:
 
    ```bash
   git clone https://github.com/khalil-M/NewsAppInstant.git
+  ```bash
+   git clone https://github.com/khalil-M/NewsAppInstant.git
 
 2. Replace the API Key:
 Locate int the compositionRoot where the API key is being used.
