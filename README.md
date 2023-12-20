@@ -7,12 +7,17 @@ NewsAppInstant is a simple project designed to display a list of articles along 
 
 This project was developed using Xcode version 15.0.1
 
+## Architecture
+Clean Architecture: The use of clean architecture ensures separation of concerns
+Dependency Injection by Constructor: This is a clean and effective way to provide dependencies to your components. Constructor injection promotes loose coupling between components, making it easier to replace or mock dependencies during testing.
+MVVM: Dedicated for the presentation layer
+
 
 ## Features
 
 ### List of News (1st Screen)
-Clean Architecture: The use of clean architecture ensures separation of concerns, making your codebase modular and easier to maintain. It typically involves organizing your code into layers such as Presentation, Domain, and Data layers.
-Dependency Injection by Constructor: This is a clean and effective way to provide dependencies to your components. Constructor injection promotes loose coupling between components, making it easier to replace or mock dependencies during testing.
+The first screen is showing list of news from remote API
+
 ### Detail of Selected News (2nd Screen)
 The second screen displays detailed information about a selected news item. This could involve navigating to a new view controller or presenting a modal view with the detailed information.
 The details view might also utilize Diffable DataSource for efficiently updating its UI if there are dynamic elements or updates to the detailed information.
