@@ -19,13 +19,12 @@ MVVM: Dedicated for the presentation layer
 The first screen is showing list of news from remote API
 
 ### Detail of Selected News (2nd Screen)
-The second screen displays detailed information about a selected news item. This could involve navigating to a new view controller or presenting a modal view with the detailed information.
-The details view might also utilize Diffable DataSource for efficiently updating its UI if there are dynamic elements or updates to the detailed information.
+The second screen displays detailed information about a selected news item. 
 
 
 ### Navigation Using a Router
 
-The project also employs a router for navigation to the details screen. This architectural pattern offers several advantages:
+The project also employs a router for navigation to the details screen.
 
 - **Separation of Concerns**: Using a router separates the navigation logic from your view controllers, promoting cleaner and more maintainable code. It helps you avoid tightly coupling your view controllers with navigation code.
 
