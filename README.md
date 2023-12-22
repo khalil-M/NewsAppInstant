@@ -41,7 +41,7 @@ NewsAppInstant
 
 - **Centralized Configuration**: By centralizing dependency configuration in the composition root, you can easily manage and update dependencies across your app.
 
-- ### OnDiskImageCaching
+- ## Caching images
 
 The project features `OnDiskImageCaching` for efficient image caching. This caching mechanism optimizes performance by storing images locally. If an image is already downloaded, it won't be re-fetched.
 
@@ -51,10 +51,12 @@ To run this project on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
 
-  ```bash
-   git clone https://github.com/khalil-M/NewsAppInstant.git
-exit
-jfdkjfsldjflmsdkjflqj
+```
+git clone https://github.com/khalil-M/NewsAppInstant.git
+```
+2. Update API Key
+Open the composition root and locate the apiKey variable. Replace its value with your actual API key.
+
 
 
 
